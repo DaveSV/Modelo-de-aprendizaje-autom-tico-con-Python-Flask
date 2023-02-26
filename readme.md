@@ -1,4 +1,5 @@
 # Puesta en Producción de un modelo de aprendizaje automático con Python, Flask y Scikit-Learn
+![Modelo_AI](https://user-images.githubusercontent.com/29576337/221439514-dcfe6ee3-4356-4146-a7d1-0983a10e2906.jpg)
 
 Modelo Predictivo basado en el Dataset Iris
 Implementación y entrenamiento del Modelo.
@@ -15,4 +16,8 @@ El modelo de aprendizaje automático va ser el encargado de clasificar entre 3 v
 
 #AI #python 
 
-Visible en >> https://iris-1-r4594186.deta.app/
+Visible en:
+
+https://modeloai.albertosaenz.com/
+
+https://iris-1-r4594186.deta.app/ (requiere autenticación)
