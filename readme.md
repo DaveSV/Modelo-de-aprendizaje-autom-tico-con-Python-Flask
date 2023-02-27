@@ -21,3 +21,12 @@ Visible en:
 https://modeloai.albertosaenz.com/
 
 https://iris-1-r4594186.deta.app/ (requiere autenticación)
+
+## Consumir API
+También puede probar este modelo haciendo una consulta a la API enviando los datos requeridos como diccionario mediante método POST a través de la siguiente URL:
+
+https://modeloai.albertosaenz.com/api
+
+Puede utilizar el siguiente bloque de código como ejemplo de Petición HTTP cambiando lo valores del diccionario.
+![postman_modeloai](https://user-images.githubusercontent.com/29576337/221526743-c194bf49-14e8-4e77-b9a1-7ed76b797789.jpg)
+
