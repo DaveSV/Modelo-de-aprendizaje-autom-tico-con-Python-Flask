@@ -3,7 +3,7 @@ import os
 import numpy as np
 import flask
 import pickle
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 #creating instance of the class
 app=Flask(__name__)
@@ -45,7 +45,28 @@ def result():
 
         return render_template("result.html", prediction=prediction)
 
+@app.route('/api', methods = ['POST'])
+def api():
+    if request.method == 'POST':
+        to_predict_list = request.json
+        to_predict_list = list(to_predict_list.values())
+        try:
+            to_predict_list = list(map(float, to_predict_list))
+            result = ValuePredictor(to_predict_list)
+            if int(result)==0:
+                prediction='Iris-Setosa'
+            elif int(result)==1:
+                prediction='Iris-Virginica'
+            elif int(result)==2:
+                prediction='Iris-Versicolour'
+            else:
+                prediction=f'{int(result)} No-definida'
+        except ValueError:
+            prediction='Error en el formato de los datos'
+
+        return jsonify({'Clase' : prediction})
+
 
 if __name__=="__main__":
 
-    app.run()
+    app.run(port=5001)
