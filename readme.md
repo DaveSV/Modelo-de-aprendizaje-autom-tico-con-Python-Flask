@@ -20,7 +20,6 @@ Visible en:
 
 https://modeloai.albertosaenz.com/
 
-https://iris-1-r4594186.deta.app/ (requiere autenticación)
 
 ## Consumir API
 También puede probar este modelo haciendo una consulta a la API enviando los datos requeridos como diccionario mediante método POST a través de la siguiente URL:
